@@ -8,6 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/70bfc8ab18.js" crossorigin="anonymous"></script>
+
+    {% load static %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
     <title>Maeumi - {% block title %}{% endblock %}</title>
   </head>
   <body>
@@ -23,10 +29,10 @@
             <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/accounts/">Sign in</a>
+            <a class="nav-link signin" data-toggle="modal" data-target="#Signin">Sign in</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sign up</a>
+            <a class="nav-link signup" data-toggle="modal" data-target="#Signup">Sign up</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">마음이 소개</a>
@@ -48,13 +54,98 @@
     </div>
     
     <footer class="bd-footer bg-light py-3 text-center">
-        <ul class="bd-footer-links list-inline">
+        <ul class="bd-footer-links list-inline mb-0">
           <li class="list-inline-item"><a class="text-muted text-decoration-none" href="#">GitHub</a></li>
           <li class="list-inline-item"><a class="text-muted text-decoration-none" href="#">Contact</a></li>
           <li class="list-inline-item"><a class="text-muted text-decoration-none" href="#">About</a></li>
         </ul>
-        <p>Copyright &copy; Maeum-I 2020</p>
+        <p>Copyright &copy; 2020. Maeum-I. All Rights Reserved.</p>
     </footer>
+
+    <!-- SignIn Modal -->
+    <div class="modal fade" id="Signin" tabindex="-1" role="dialog" aria-labelledby="form-signin" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="form-signin">Press Sign In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-3">
+            <div class="p-3 mx-auto">
+              <form action="/" class="formsignin mx-auto">
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <div class="d-flex justify-content-between mt-2 px-2">
+                  <label class="mb-3">
+                      <input type="checkbox"> Remember me
+                  </label>
+                  <p class="text-right"><a class="text-muted" href="/">forgot password?</a></p>
+                </div>
+                <input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign In">
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+            <div>
+              <button type="button" class="btn btn-outline-secondary">네이버 로그인</button>
+              <button type="button" class="btn btn-outline-secondary">구글 로그인</button>
+            </div>
+            <button type="button" class="btn btn-secondary">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SignIn Modal -->
+    <div class="modal fade" id="Signup" tabindex="-1" role="dialog" aria-labelledby="form-signup" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="form-signup">Sign up</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-3">
+            <div class="p-3 mx-auto">
+              <form action="/" class="formsignup mx-auto">
+                <div>
+                  <span>
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <label for="Email" class="sr-only">Email address</label>
+                  <input type="email" id="Email" class="form-control" placeholder="Email address" required autofocus>
+                </div>
+                <br>
+                <i class="fas fa-user"></i>
+                <label for="username" class="sr-only">User Name</label>
+                <input type="text" id="username" class="form-control" placeholder="User Name" required>
+                <br>
+                <i class="fas fa-lock"></i>
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Password" required>
+                <br>
+                <label for="confirmpassword" class="sr-only">Confirm Password</label>
+                <input type="password" id="confirmpassword" class="form-control" placeholder="Confirm Password" required>
+                <br>
+                <input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign Up">
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+            <div>
+              <button type="button" class="btn btn-outline-secondary">네이버 로그인</button>
+              <button type="button" class="btn btn-outline-secondary">구글 로그인</button>
+            </div>
+            <button type="button" class="btn btn-secondary">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
