@@ -1,0 +1,19 @@
+.formsignin input[type='email'] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.formsignin input[type='password'] {
+    margin-top: -1px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.signin {
+    cursor: pointer;
+}
+
+.signup {
+    cursor: pointer;
+}
