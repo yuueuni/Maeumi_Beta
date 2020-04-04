@@ -17,3 +17,19 @@
 .signup {
     cursor: pointer;
 }
+
+.formsignup input {
+    margin-left: -1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.formsignup span {
+    margin-right: -1px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.main-content {
+    line-height: 200%;
+}
