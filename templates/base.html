@@ -113,25 +113,34 @@
           <div class="modal-body p-3">
             <div class="p-3 mx-auto">
               <form action="/" class="formsignup mx-auto">
-                <div>
-                  <span>
+                <div class="input-group-prepend mb-3">
+                  <span class="input-group-text">
                     <i class="fas fa-envelope"></i>
                   </span>
                   <label for="Email" class="sr-only">Email address</label>
                   <input type="email" id="Email" class="form-control" placeholder="Email address" required autofocus>
                 </div>
-                <br>
-                <i class="fas fa-user"></i>
-                <label for="username" class="sr-only">User Name</label>
-                <input type="text" id="username" class="form-control" placeholder="User Name" required>
-                <br>
-                <i class="fas fa-lock"></i>
-                <label for="password" class="sr-only">Password</label>
-                <input type="password" id="password" class="form-control" placeholder="Password" required>
-                <br>
-                <label for="confirmpassword" class="sr-only">Confirm Password</label>
-                <input type="password" id="confirmpassword" class="form-control" placeholder="Confirm Password" required>
-                <br>
+                <div class="input-group-prepend mb-3">
+                  <span class="input-group-text">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <label for="username" class="sr-only">User Name</label>
+                  <input type="text" id="username" class="form-control" placeholder="User Name" required>
+                </div>
+                <div class="input-group-prepend mb-3">
+                  <span class="input-group-text">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                  <label for="password" class="sr-only">Password</label>
+                  <input type="password" id="password" class="form-control" placeholder="Password" required>
+                </div>
+                <div class="input-group-prepend mb-3">
+                  <span class="input-group-text">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                  <label for="confirmpassword" class="sr-only">Confirm Password</label>
+                  <input type="password" id="confirmpassword" class="form-control" placeholder="Confirm Password" required>
+                </div>
                 <input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign Up">
               </form>
             </div>
