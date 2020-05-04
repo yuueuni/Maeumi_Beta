@@ -4,4 +4,9 @@
 * [Maeumi Alpha](https://github.com/yuueuni/IITP_Project)
 
 ## Beta Version
-* Front-End : HTML, CSS, Bootstrap, Javascript
+* django
+
+## To do
+* virtual environment
+* Object Detection - install, path 설정
+* Analysis Model
