@@ -24,7 +24,7 @@
 > `requiremenets.txt` 업데이트
 * 목적 : 간결하고 효율적인 코드
 * 변경사항 : 분석 페이지 개별화(House, Tree, Person 분석 -> 총 3페이지)
-* 재검토 : Server, DB
+* 재검토 : Server, DB, python version
 
 * 추가 기능
     * ~~telegram 챗봇 > 자세 설명?~~
