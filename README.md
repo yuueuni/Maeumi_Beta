@@ -10,6 +10,7 @@
 * virtual environment
 * Object Detection - install, path 설정
 * Analysis Model
+* DRF(Django Restful API), Vue.js 구축
 
 ---
 # Maeumi Beta Version
@@ -22,13 +23,11 @@
 
 ### Beta Version
 > `requiremenets.txt` 업데이트
-* 목적 : 간결하고 효율적인 코드
+
 * 변경사항 : 분석 페이지 개별화(House, Tree, Person 분석 -> 총 3페이지)
 * 재검토 : Server, DB, python version
 
-* 추가 기능
-    * ~~telegram 챗봇 > 자세 설명?~~
-    * Analysis Model API 구축 (별개 서버)
+* Analysis Model API 구축 (별개 서버)
 
 ## 기타
 * [개인정보처리방침](https://www.privacy.go.kr/a3sc/per/inf/perInfStep01.do)
