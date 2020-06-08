@@ -10,7 +10,7 @@
 * virtual environment
 * Object Detection - install, path 설정
 * Analysis Model
-* DRF(Django Restful API), Vue.js 구축
+* DRF(Django Restful Framework) API, Vue.js 구축
 
 ---
 # Maeumi Beta Version
