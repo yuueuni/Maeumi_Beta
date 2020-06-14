@@ -7,7 +7,7 @@
     - 분석모델 작동X (cpu 부족)
 
 ## Beta Version
-* django
+* Django ( + Vue.js - FrontEnd)
 
 ## To do
 * virtual environment
@@ -37,3 +37,4 @@
 
 ## 기타
 * [개인정보처리방침](https://www.privacy.go.kr/a3sc/per/inf/perInfStep01.do)
+* [Swagger](https://swagger.io/) - API Document
